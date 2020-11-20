@@ -41,6 +41,9 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           {
+            loader: "style-loader"
+          },
+          {
             loader: "css-loader",
           },
           {
@@ -94,5 +97,6 @@ module.exports = {
     inline: true,
     host: "localhost",
     port: 9000,
+    hot: true
   },
 };
